@@ -1,4 +1,4 @@
-from Library import LibraryItem
+from LibraryItem import LibraryItem
 
 
 class Book(LibraryItem):

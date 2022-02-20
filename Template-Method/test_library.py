@@ -1,6 +1,7 @@
 import pytest
-from Library import LibraryItem
+from LibraryItem import LibraryItem
 from Book import Book
+from Magazine import Magazine
 from unittest.mock import MagicMock
 
 
@@ -39,3 +40,9 @@ def test_book_item_check_raises_error_when_code_not_B():
     book = Book("A12")
     with pytest.raises(ValueError):
         book.process()
+
+
+def test_magazine_item_check_raises_error_when_code_not_M():
+    mag = Magazine("B12")
+    with pytest.raises(ValueError):
+        mag.process()
